@@ -15,6 +15,9 @@ the ScummVM source tree and run `./build_steamlink.sh`.
 To install, place `scummvm.tgz` onto a FAT32 formatted USB disk in `steamlink/apps/scummvm`. Place the USB disk into your Steam Link, unplug it
 and plug it back in. This copies the app to the filesystem on the Steam Link so you can trash the disk afterwards if you like.
 
+You can pass additional `./configure` options while invoking the script, such as `./build_steamlink.sh 
+--disable-all-engines`.
+
 Alternatively you can enable SSH on the Steam Link (see the SDK documentation) and scp it (uncompressed) directly to /home/apps/scummvm.
 
 ## Changes
