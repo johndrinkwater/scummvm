@@ -158,7 +158,7 @@ _debug_build=auto
 _release_build=auto
 _optimizations=auto
 _use_cxx11=no
-_verbose_build=yes
+_verbose_build=auto
 _text_console=no
 _mt32emu=yes
 _build_scalers=yes
@@ -2930,6 +2930,7 @@ if test -n "$_host"; then
 			;;
 		steamlink)
 				append_var DEFINES "-DEGL_API_FB"
+				append_var INCLUDES "-I$MARVELL_ROOTFS/usr/include/SDL2"
 				append_var CXXFLAGS "-mfpu=neon"
 				append_var CXXFLAGS "-march=armv7-a"
 			;;
