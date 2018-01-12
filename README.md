@@ -12,13 +12,16 @@ https://github.com/ValveSoftware/steamlink-sdk (it's over 3GB and takes a
 while!) and run `source setenv.sh` while in the SDK root directory. Then enter
 the ScummVM source tree and run `./build_steamlink.sh`.
 
-To install, place `scummvm.tgz` onto a FAT32 formatted USB disk in `steamlink/apps/scummvm`. Place the USB disk into your Steam Link, unplug the power cable from the Link 
-and then plug it back in. This copies the app to the filesystem on the Steam Link so you can trash the disk afterwards if you like.
+To install, place `scummvm.tgz` onto a FAT32 formatted USB disk in
+`steamlink/apps/scummvm`. Place the USB disk into your Steam Link, unplug the
+power cable from the Link and then plug it back in. This copies the app to the
+filesystem on the Steam Link so you can trash the disk afterwards if you like.
 
-You can pass additional `./configure` options while invoking the script, such as `./build_steamlink.sh 
---disable-all-engines`.
+You can pass additional `./configure` options while invoking the script, such
+as `./build_steamlink.sh --disable-all-engines`.
 
-Alternatively you can enable SSH on the Steam Link (see the SDK documentation) and scp it (uncompressed) directly to /home/apps/scummvm.
+Alternatively you can enable SSH on the Steam Link (see the SDK documentation)
+and scp it (uncompressed) directly to /home/apps/scummvm.
 
 ## Changes
 
@@ -27,7 +30,8 @@ assigned in `configure`. Fine tuning the correct options here may or may not be
 necessary for better performance (but it already performs pretty well as it
 is).
 
-Please fork and continue development if you'd like to get the Steam Controller working.
+Please fork and continue development if you'd like to get the Steam Controller
+working.
 
 ## Credits and whatever else
 
